@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- array associativo, enviar dados encapsulado. métodos - get/ post; envia -->
+        <!-- get - envia para url para ser processada, busca. post - envia pela rede (pacote de rede) - cadastro -->
+        <form action="" method="get" class="form"> 
+            <label for="">Seu ID</label>
+            <input type="text" value="ID 123" disabled> <br><br>
+
+            <label for="rg">RG</label>
+            <input type="number" name="rg" id="rg" maxlength="9">
+
+            <label for="">Senha</label>
+            <input type="text" placeholder="Digite sua senha" required>
+
+            <input type="checkbox" name="concordo" id="concordo">
+            <label for="concordo">Li e concordo</label> <br><br>
+            <!-- alt + seta p baixo - muda de lugar -->
+
+
+            <label for="">Linguagem</label> <br><br>
+
+            <input type="checkbox" name="php" id="php">
+            <label for="">PHP</label> <br>
+            
+            <input type="checkbox" name="c#" id="c#">
+            <label for="">C#</label> <br>
+
+            <input type="checkbox" name="python" id="python">
+            <label for="">Python</label> <br>
+
+            <input type="checkbox" name="JavaScript" id="JavaScript">
+            <label for="">JavaScript</label> <br><br><br>
+
+
+            <label for="sexo">Sexo</label> <br><br>
+
+            <!-- name diferente - não da opção de ticar só um -->
+            <input type="radio" name="sexo" id="sexo">
+            <label for="masc">Masculino</label>
+
+            <input type="radio" name="sexo" id="sexo">
+            <label for="fem">Feminino</label> <br><br>
+
+
+            <label for="senha">Senha</label>
+            <!-- Não mostra o q a pessoa digita -->
+            <input type="password" name="" id=""> <br><br>
+
+            <label for="senha">Descrição</label> <br>
+            <textarea name="descrição" id="descrição" cols="50" rows="10"></textarea> <br><br>
+
+            <select name="estado" id="estado">
+                <option value="SP">São Paulo</option>
+                <option value="RG">Rio de Janeiro</option>
+                <option value="AC">Acre</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+            
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
